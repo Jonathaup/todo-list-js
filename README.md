@@ -10,7 +10,7 @@ The aim of writing this software is to familiarize myself with key JavaScript fe
 
 I implemented this software in Visual Studio Code as my IDE, on Windows 10. The programming language utilized is JavaScript, with HTML and CSS for structure and design.
 
-No external JavaScript libraries have been employed.
+An external JavaScript library, dayjs, was employed to handle and format timestamps for each task added. The library was included via a CDN link.
 
 # Useful Websites
 
