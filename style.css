@@ -1,0 +1,101 @@
+/* Basic styling for the to-do list */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f6fa;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+}
+
+.container {
+    background-color: white;
+    margin-top: 50px;
+    padding: 20px 30px;
+    border-radius: 8px;
+    width: 350px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #2f3640;
+}
+
+.input-section {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+#taskInput {
+    flex: 1;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #dcdde1;
+    border-radius: 4px 0 0 4px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+#taskInput:focus {
+    border-color: #273c75;
+}
+
+#addTaskBtn {
+    padding: 10px 20px;
+    background-color: #273c75;
+    color: white;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 0 4px 4px 0;
+    transition: background-color 0.3s;
+}
+
+#addTaskBtn:hover {
+    background-color: #192a56;
+}
+
+#taskList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.task-item {
+    display: flex;
+    justify-content: space-between;
+    background-color: #f0f0f0;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 4px;
+    align-items: center;
+}
+
+.task-item.completed .task-text {
+    text-decoration: line-through;
+    color: #7f8fa6;
+}
+
+.task-text {
+    flex: 1;
+    cursor: pointer;
+}
+
+.delete-btn {
+    background-color: #e84118;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-left: 10px;
+    transition: background-color 0.3s;
+}
+
+.delete-btn:hover {
+    background-color: #c23616;
+}
