@@ -8,32 +8,34 @@ const taskList = document.getElementById('taskList');
  * @param {string} taskText - The text of the task
  */
 function createTaskElement(taskText) {
-    // Create <li> element for the task
     const taskItem = document.createElement('li');
     taskItem.classList.add('task-item');
 
-    // Create a span for the task text
     const taskSpan = document.createElement('span');
     taskSpan.classList.add('task-text');
     taskSpan.textContent = taskText;
 
-    // Toggle completed state when clicking the task text
+    // Date with Dayjs
+    const dateSpan = document.createElement('span');
+    dateSpan.style.marginLeft = '10px';
+    dateSpan.style.fontSize = '0.8em';
+    dateSpan.style.color = '#888';
+    dateSpan.textContent = dayjs().format('YYYY-MM-DD HH:mm:ss'); // Date Format
+
     taskSpan.addEventListener('click', () => {
         taskItem.classList.toggle('completed');
     });
 
-    // Create delete button
     const deleteBtn = document.createElement('button');
     deleteBtn.classList.add('delete-btn');
     deleteBtn.textContent = 'Delete';
 
-    // Remove task when delete button is clicked
     deleteBtn.addEventListener('click', () => {
         taskList.removeChild(taskItem);
     });
 
-    // Append task text and delete button to task item
     taskItem.appendChild(taskSpan);
+    taskItem.appendChild(dateSpan);  // Add Date Here
     taskItem.appendChild(deleteBtn);
 
     return taskItem;
