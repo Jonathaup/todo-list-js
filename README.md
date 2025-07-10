@@ -4,7 +4,7 @@ As a programmer, I would like to advance my skills in JavaScript by developing a
 
 The aim of writing this software is to familiarize myself with key JavaScript features and enhance my coding abilities by developing an interactive and functional web application.
 
-[Software Demo Video](http://youtube.link.goes.here)
+[Software Demo Video](https://youtu.be/T-CK_PQsO3E)
 
 # Development Environment
 
